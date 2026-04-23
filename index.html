@@ -76,23 +76,25 @@
 <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur transition-all duration-300">
   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
-    <!-- Logo -->
     <a href="#hero" class="font-display text-lg font-800 text-white tracking-tight">
       ivan.<span class="text-emerald-400">dev</span>
     </a>
 
-    <!-- Links desktop -->
     <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-      <li><a href="#stack"     class="hover:text-white transition-colors">Stack</a></li>
-      <li><a href="#proyecto"  class="hover:text-white transition-colors">Proyecto</a></li>
-      <li><a href="#educacion" class="hover:text-white transition-colors">Educación</a></li>
-      <li><a href="#contacto"  class="hover:text-white transition-colors">Contacto</a></li>
-    </ul>
+  <li><a href="#stack"     class="hover:text-white transition-colors" data-i18n="nav-stack">Stack</a></li>
+  <li><a href="#proyecto"  class="hover:text-white transition-colors" data-i18n="nav-projects">Proyecto</a></li>
+  <li><a href="#educacion" class="hover:text-white transition-colors" data-i18n="nav-education">Educación</a></li>
+  <li><a href="#contacto"  class="hover:text-white transition-colors" data-i18n="nav-contact">Contacto</a></li>
+  <li>
+    <button id="lang-toggle" class="flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/5 text-emerald-400 text-xs font-bold hover:bg-emerald-500/20 transition-all">
+      <span id="lang-text">EN</span>
+      </button>
+  </li>
+</ul>
 
-    <!-- CTA + hamburger -->
     <div class="flex items-center gap-4">
       <a href="mailto:ivanfb1925@gmail.com"
-         class="hidden md:inline-flex btn-primary text-sm py-2 px-4">
+         class="hidden md:inline-flex btn-primary text-sm py-2 px-4" data-i18n="btn-contact-me">
         Contáctame
       </a>
       <button id="hamburger" aria-label="Menú"
@@ -104,15 +106,14 @@
     </div>
   </div>
 
-  <!-- Menú móvil -->
   <div id="mobile-menu"
        class="md:hidden px-6 pb-5 pt-2 flex flex-col gap-4 text-sm font-medium
               text-slate-300 border-t border-slate-800/50">
-    <a href="#stack"     onclick="closeMobileMenu()" class="hover:text-white transition-colors">Stack</a>
-    <a href="#proyecto"  onclick="closeMobileMenu()" class="hover:text-white transition-colors">Proyecto</a>
-    <a href="#educacion" onclick="closeMobileMenu()" class="hover:text-white transition-colors">Educación</a>
-    <a href="#contacto"  onclick="closeMobileMenu()" class="hover:text-white transition-colors">Contacto</a>
-    <a href="mailto:ivanfb1925@gmail.com" class="btn-primary text-sm py-2 px-4 w-fit mt-1">Contáctame</a>
+    <a href="#stack"     onclick="closeMobileMenu()" class="hover:text-white transition-colors" data-i18n="nav-stack">Stack</a>
+    <a href="#proyecto"  onclick="closeMobileMenu()" class="hover:text-white transition-colors" data-i18n="nav-projects">Proyecto</a>
+    <a href="#educacion" onclick="closeMobileMenu()" class="hover:text-white transition-colors" data-i18n="nav-education">Educación</a>
+    <a href="#contacto"  onclick="closeMobileMenu()" class="hover:text-white transition-colors" data-i18n="nav-contact">Contacto</a>
+    <a href="mailto:ivanfb1925@gmail.com" class="btn-primary text-sm py-2 px-4 w-fit mt-1" data-i18n="btn-contact-me">Contáctame</a>
   </div>
 </nav>
 
@@ -145,7 +146,7 @@
       <div class="inline-flex items-center gap-2 text-xs text-slate-400 font-medium mb-6
                   bg-slate-800/60 border border-slate-700/50 rounded-full px-4 py-2 animate-fade-in">
         <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-        Cali, Colombia · Disponible para proyectos
+        <span data-i18n="hero-status">Cali, Colombia · Disponible para proyectos</span>
       </div>
 
       <h1 class="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold
@@ -161,7 +162,7 @@
       </div>
 
       <p class="max-w-xl mx-auto md:mx-0 text-slate-400 text-base md:text-lg leading-relaxed mb-10
-                animate-fade-up" style="animation-delay:0.4s;">
+                animate-fade-up"  style="animation-delay:0.4s;" data-i18n="hero-bio-html">
         Desarrollador Full Stack enfocado en soluciones digitales escalables y optimización
         de experiencia de usuario. Graduado del Bootcamp
         <strong class="text-emerald-400">Talento Tech (ADSO) 2026</strong>,
@@ -173,7 +174,7 @@
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
           </svg>
-          Ver Proyecto
+          <span data-i18n="btn-project">Ver Proyecto</span>
         </a>
         
         <a href="https://www.linkedin.com/in/ivanbejaranosaavedra/" target="_blank" rel="noopener" class="btn-outline">
@@ -190,12 +191,12 @@
           GitHub
         </a>
 
-        <a href="Cv/Hoja de Vida Ivan Bejarano.pdf" target="_blank" 
+        <a id="cv-link" href="Cv/Hoja de Vida Ivan Bejarano.pdf" target="_blank" 
            class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-semibold hover:bg-emerald-500/20 hover:border-emerald-500/40 transition-all duration-300 group">
           <svg class="w-5 h-5 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
           </svg>
-          Descargar CV
+          <span data-i18n="btn-cv">Descargar CV</span>
         </a>
       </div>
 
@@ -220,11 +221,11 @@
   <div class="max-w-6xl mx-auto px-6">
 
     <div class="text-center mb-16 reveal">
-      <p class="section-label mb-3">Herramientas & Tecnologías</p>
+      <p class="section-label mb-3" data-i18n="stack-tools-label">Herramientas & Tecnologías</p>
       <h2 class="font-display text-4xl md:text-5xl font-extrabold text-white">
         Tech <span class="gradient-text">Stack</span>
       </h2>
-      <p class="mt-4 text-slate-400 max-w-lg mx-auto text-sm leading-relaxed">
+      <p class="mt-4 text-slate-400 max-w-lg mx-auto text-sm leading-relaxed" data-i18n="stack-subtitle">
         Tecnologías que domino para construir productos digitales robustos,
         desde la interfaz hasta la base de datos.
       </p>
@@ -251,7 +252,7 @@
           <span class="skill-pill">Tailwind CSS</span>
           <span class="skill-pill">Responsive Design</span>
         </div>
-        <p class="mt-5 text-slate-500 text-xs leading-relaxed">
+        <p class="mt-5 text-slate-500 text-xs leading-relaxed" data-i18n="stack-frontend-desc">
           Interfaces accesibles, rápidas y optimizadas para móviles con énfasis en UX.
         </p>
       </div>
@@ -274,7 +275,7 @@
           <span class="skill-pill">JWT Auth</span>
           <span class="skill-pill">MVC Pattern</span>
         </div>
-        <p class="mt-5 text-slate-500 text-xs leading-relaxed">
+        <p class="mt-5 text-slate-500 text-xs leading-relaxed" data-i18n="stack-backend-desc">
           Arquitecturas escalables con Node.js, diseño RESTful y autenticación segura.
         </p>
       </div>
@@ -300,7 +301,7 @@
           <span class="skill-pill">Scrum</span>
           <span class="skill-pill">Postman</span>
         </div>
-        <p class="mt-5 text-slate-500 text-xs leading-relaxed">
+        <p class="mt-5 text-slate-500 text-xs leading-relaxed" data-i18n="stack-db-desc">
           Modelado de datos relacionales y NoSQL, control de versiones y metodologías ágiles.
         </p>
       </div>
@@ -325,9 +326,9 @@
   <div class="max-w-6xl mx-auto px-6 relative z-10">
 
     <div class="text-center mb-16 reveal">
-      <p class="section-label mb-3">Proyecto en Desarrollo</p>
+      <p class="section-label mb-3" data-i18n="proj-label">Proyecto en Desarrollo</p>
       <h2 class="font-display text-4xl md:text-5xl font-extrabold text-white">
-        Lo que he <span class="gradient-text">construido</span>
+        <span data-i18n="proj-heading-1">Lo que he</span> <span class="gradient-text" data-i18n="proj-heading-2">construido</span>
       </h2>
     </div>
 
@@ -358,7 +359,7 @@
             <h3 class="font-display text-3xl font-extrabold text-white mb-2 leading-tight">
               Velocity<br/><span class="text-emerald-400">Adventures</span>
             </h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
+            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="proj-desc">
               Plataforma integral para gestión de expediciones de deportes extremos.
             </p>
           </div>
@@ -366,7 +367,7 @@
           <div class="grid grid-cols-3 gap-4 mt-8">
             <div class="text-center">
               <div class="font-display text-2xl font-bold text-emerald-400">100%</div>
-              <div class="text-slate-500 text-xs mt-1">Responsivo</div>
+              <div class="text-slate-500 text-xs mt-1" data-i18n="proj-stat-1">Responsivo</div>
             </div>
             <div class="text-center border-x border-slate-700/60">
               <div class="font-display text-2xl font-bold text-emerald-400">REST</div>
@@ -383,21 +384,21 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
               </svg>
-              Pronto..
+              <span data-i18n="proj-btn-soon">Pronto..</span>
             </a>
             <a href="https://github.com/Hidancho33/proyects_Velocity_Adventure#" target="_blank" rel="noopener"
                class="btn-outline text-sm py-2.5 px-5 flex-1 justify-center">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
               </svg>
-              Código
+              <span data-i18n="proj-btn-code">Código</span>
             </a>
           </div>
         </div>
 
         <!-- Panel derecho -->
         <div class="md:col-span-3 p-8 md:p-10">
-          <h4 class="font-display font-bold text-white text-lg mb-6">Características del Proyecto</h4>
+          <h4 class="font-display font-bold text-white text-lg mb-6" data-i18n="proj-features-title">Características del Proyecto</h4>
           <ul class="space-y-4 mb-8">
 
             <li class="flex items-start gap-4">
@@ -407,8 +408,8 @@
                 </svg>
               </div>
               <div>
-                <div class="text-white font-semibold text-sm mb-1">Diseño 100% Responsivo</div>
-                <p class="text-slate-400 text-xs leading-relaxed">Interfaz adaptativa Mobile First que garantiza una experiencia fluida en cualquier dispositivo, desde móvil hasta escritorio.</p>
+                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-1-title">Diseño 100% Responsivo</div>
+                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-1-desc">Interfaz adaptativa Mobile First que garantiza una experiencia fluida en cualquier dispositivo, desde móvil hasta escritorio.</p>
               </div>
             </li>
 
@@ -419,8 +420,8 @@
                 </svg>
               </div>
               <div>
-                <div class="text-white font-semibold text-sm mb-1">Filtrado Dinámico en JavaScript</div>
-                <p class="text-slate-400 text-xs leading-relaxed">Sistema de filtros en tiempo real por categoría, dificultad y precio sin recargar la página.</p>
+                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-2-title">Filtrado Dinámico en JavaScript</div>
+                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-2-desc">Sistema de filtros en tiempo real por categoría, dificultad y precio sin recargar la página.</p>
               </div>
             </li>
 
@@ -431,8 +432,8 @@
                 </svg>
               </div>
               <div>
-                <div class="text-white font-semibold text-sm mb-1">Carrito con Persistencia</div>
-                <p class="text-slate-400 text-xs leading-relaxed">Gestión de reservas con persistencia en LocalStorage, manteniendo el estado del usuario entre sesiones.</p>
+                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-3-title">Carrito con Persistencia</div>
+                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-3-desc">Gestión de reservas con persistencia en LocalStorage, manteniendo el estado del usuario entre sesiones.</p>
               </div>
             </li>
 
@@ -443,8 +444,8 @@
                 </svg>
               </div>
               <div>
-                <div class="text-white font-semibold text-sm mb-1">Arquitectura API REST</div>
-                <p class="text-slate-400 text-xs leading-relaxed">Backend con Node.js + Express.js siguiendo principios REST, con endpoints documentados y autenticación JWT.</p>
+                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-4-title">Arquitectura API REST</div>
+                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-4-desc">Backend con Node.js + Express.js siguiendo principios REST, con endpoints documentados y autenticación JWT.</p>
               </div>
             </li>
 
@@ -457,15 +458,15 @@
                 </svg>
               </div>
               <div>
-                <div class="text-white font-semibold text-sm mb-1">Base de Datos MySQL</div>
-                <p class="text-slate-400 text-xs leading-relaxed">Modelo relacional normalizado con tablas de usuarios, expediciones, reservas y pagos.</p>
+                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-5-title">Base de Datos MySQL</div>
+                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-5-desc">Modelo relacional normalizado con tablas de usuarios, expediciones, reservas y pagos.</p>
               </div>
             </li>
 
           </ul>
 
           <div>
-            <p class="text-slate-500 text-xs font-medium mb-3 tracking-wide uppercase">Stack Utilizado</p>
+            <p class="text-slate-500 text-xs font-medium mb-3 tracking-wide uppercase" data-i18n="proj-stack-label">Stack Utilizado</p>
             <div class="flex flex-wrap gap-2">
               <span class="skill-pill">HTML5</span>
               <span class="skill-pill">CSS3</span>
@@ -493,9 +494,9 @@
   <div class="max-w-4xl mx-auto px-6">
 
     <div class="text-center mb-16 reveal">
-      <p class="section-label mb-3">Formación Académica</p>
+      <p class="section-label mb-3" data-i18n="edu-label">Formación Académica</p>
       <h2 class="font-display text-4xl md:text-5xl font-extrabold text-white">
-        Mi <span class="gradient-text">Educación</span>
+        <span data-i18n="edu-heading-1">Mi</span> <span class="gradient-text" data-i18n="edu-heading-2">Educación</span>
       </h2>
     </div>
 
@@ -512,14 +513,14 @@
           <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
             <div>
               <div class="inline-flex items-center gap-2 mb-2">
-                <span class="bg-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30">EN CURSO</span>
+                <span class="bg-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30" data-i18n="edu-badge-current">EN CURSO</span>
               </div>
-              <h3 class="font-display text-xl font-bold text-white">Ingeniería de Sistemas</h3>
+              <h3 class="font-display text-xl font-bold text-white" data-i18n="edu-sys-title">Ingeniería de Sistemas</h3>
               <p class="text-emerald-400 font-semibold text-sm mt-1">Fundacion Universitaria Católica Lumen Gentium – UNICATÓLICA</p>
             </div>
-            <span class="text-slate-500 text-sm font-medium whitespace-nowrap">2023 – Presente</span>
+            <span class="text-slate-500 text-sm font-medium whitespace-nowrap" data-i18n="edu-sys-date">2023 – Presente</span>
           </div>
-          <p class="text-slate-400 text-sm leading-relaxed">Formación en fundamentos de algoritmos, estructuras de datos, bases de datos, redes y arquitectura de software.</p>
+          <p class="text-slate-400 text-sm leading-relaxed" data-i18n="edu-sys-desc">Formación en fundamentos de algoritmos, estructuras de datos, bases de datos, redes y arquitectura de software.</p>
           <div class="flex flex-wrap gap-2 mt-4">
             <span class="skill-pill">Algoritmos</span>
             <span class="skill-pill">Estructuras de Datos</span>
@@ -538,14 +539,14 @@
           <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
             <div>
               <div class="inline-flex items-center gap-2 mb-2">
-                <span class="bg-slate-700/60 text-slate-300 text-xs font-bold px-3 py-1 rounded-full border border-slate-600/40">CERTIFICADO ✓</span>
+                <span class="bg-slate-700/60 text-slate-300 text-xs font-bold px-3 py-1 rounded-full border border-slate-600/40" data-i18n="edu-badge-cert">CERTIFICADO ✓</span>
               </div>
-              <h3 class="font-display text-xl font-bold text-white">Bootcamp · ADSO Full Stack</h3>
+              <h3 class="font-display text-xl font-bold text-white" data-i18n="edu-adso-title">Bootcamp · ADSO Full Stack</h3>
               <p class="text-emerald-400 font-semibold text-sm mt-1">Talento Tech Cali/Colombia</p>
             </div>
             <span class="text-slate-500 text-sm font-medium whitespace-nowrap">2026</span>
           </div>
-          <p class="text-slate-400 text-sm leading-relaxed">Programa intensivo con enfoque práctico en HTML, CSS, JavaScript, Node.js, Express.js, MySQL, MongoDB y Scrum. Proyecto final: Velocity Adventures.</p>
+          <p class="text-slate-400 text-sm leading-relaxed" data-i18n="edu-adso-desc">Programa intensivo con enfoque práctico en HTML, CSS, JavaScript, Node.js, Express.js, MySQL, MongoDB y Scrum. Proyecto final: Velocity Adventures.</p>
           <div class="flex flex-wrap gap-2 mt-4">
             <span class="skill-pill">Node.js</span>
             <span class="skill-pill">Express.js</span>
@@ -575,11 +576,11 @@
   <div class="max-w-5xl mx-auto px-6 relative z-10">
 
     <div class="text-center mb-12 reveal">
-      <p class="section-label mb-3">¿Hablamos?</p>
+      <p class="section-label mb-3" data-i18n="contact-label">¿Hablamos?</p>
       <h2 class="font-display text-4xl md:text-5xl font-extrabold text-white">
-        Trabajemos <span class="gradient-text">Juntos</span>
+        <span data-i18n="contact-heading-1">Trabajemos</span> <span class="gradient-text" data-i18n="contact-heading-2">Juntos</span>
       </h2>
-      <p class="mt-4 text-slate-400 max-w-lg mx-auto text-sm leading-relaxed">
+      <p class="mt-4 text-slate-400 max-w-lg mx-auto text-sm leading-relaxed" data-i18n="contact-desc">
         Estoy abierto a nuevas oportunidades laborales, proyectos freelance y colaboraciones creativas.
       </p>
     </div>
@@ -645,7 +646,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
           </svg>
         </div>
-        <span class="text-slate-400 text-sm leading-tight">Cali, Colombia · Abierto a trabajo remoto 🌎</span>
+        <span class="text-slate-400 text-sm leading-tight" data-i18n="contact-location">Cali, Colombia · Abierto a trabajo remoto 🌎</span>
       </div>
 
     </div>
@@ -661,7 +662,7 @@
     <div class="font-display text-slate-500 text-sm">
       © 2026 <span class="text-white font-semibold">Ivan Felipe Bejarano</span> · Cali, Colombia
     </div>
-    <div class="text-slate-600 text-xs">
+    <div class="text-slate-600 text-xs" data-i18n="footer-built">
       Construido con <span class="text-emerald-400">♥</span> con HTML5 + Tailwind CSS
     </div>
     <div class="flex items-center gap-4">
