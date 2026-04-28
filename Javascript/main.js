@@ -57,6 +57,20 @@ var textos = {
 
     "footer-built":        "Construido con ♥ con HTML5 + Tailwind CSS",
 
+    "sb-desc":             "Tienda online de postres artesanales con catálogo dinámico, carrito de compras, sistema de pedidos y notificaciones vía WhatsApp.",
+    "sb-stat-1":           "First",
+    "sb-btn-demo":         "Demo",
+    "sb-feat-1-title":     "Catálogo Dinámico & Carrito",
+    "sb-feat-1-desc":      "Productos cargados desde MongoDB con filtros por categoría, carrito persistente en LocalStorage y gestión de favoritos.",
+    "sb-feat-2-title":     "Notificaciones WhatsApp",
+    "sb-feat-2-desc":      "Integración con la API de WhatsApp para envío automático de confirmaciones de pedido al cliente y al negocio en tiempo real.",
+    "sb-feat-3-title":     "Generación de Facturas PDF",
+    "sb-feat-3-desc":      "Cada pedido genera automáticamente una factura en PDF con PDFKit, descargable desde la vista de confirmación.",
+    "sb-feat-4-title":     "Backend Node.js + MongoDB",
+    "sb-feat-4-desc":      "API REST con Express.js y Mongoose, modelos de datos para productos, pedidos, clientes, direcciones y métodos de pago.",
+    "sb-feat-5-title":     "UI Mobile First con Bootstrap 5",
+    "sb-feat-5-desc":      "Interfaz responsiva optimizada para móvil con componentes reutilizables cargados dinámicamente, header, footer y bottom-nav.",
+
     "typing-words":        ["Full Stack Developer", "Estudiante de Ingeniería"]
   },
 
@@ -115,6 +129,20 @@ var textos = {
     "contact-location":    "Cali, Colombia · Open to remote work 🌎",
 
     "footer-built":        "Built with ♥ using HTML5 + Tailwind CSS",
+
+    "sb-desc":             "Online artisan bakery store with dynamic catalog, shopping cart, order management system and WhatsApp notifications.",
+    "sb-stat-1":           "First",
+    "sb-btn-demo":         "Demo",
+    "sb-feat-1-title":     "Dynamic Catalog & Cart",
+    "sb-feat-1-desc":      "Products loaded from MongoDB with category filters, persistent LocalStorage cart, and favorites management.",
+    "sb-feat-2-title":     "WhatsApp Notifications",
+    "sb-feat-2-desc":      "WhatsApp API integration for automatic order confirmation messages sent to the customer and the business in real time.",
+    "sb-feat-3-title":     "PDF Invoice Generation",
+    "sb-feat-3-desc":      "Every order automatically generates a downloadable PDF invoice using PDFKit, accessible from the confirmation view.",
+    "sb-feat-4-title":     "Node.js + MongoDB Backend",
+    "sb-feat-4-desc":      "REST API with Express.js and Mongoose, data models for products, orders, customers, addresses and payment methods.",
+    "sb-feat-5-title":     "Mobile First UI with Bootstrap 5",
+    "sb-feat-5-desc":      "Mobile-optimized responsive interface with dynamically loaded reusable components: header, footer, and bottom-nav.",
 
     "typing-words":        ["Full Stack Developer", "Systems Engineering Student"]
   }
@@ -344,3 +372,62 @@ function linkActivoNavbar() {
     });
   });
 }
+
+// ── Carrusel de proyectos ────────────────────────────────
+var slideActual = 0;
+var totalSlides = 2;
+
+function irASlide(indice) {
+  slideActual = indice;
+  var track = document.getElementById("carousel-track");
+  if (!track) return;
+  track.style.transform = "translateX(-" + (slideActual * 100) + "%)";
+  actualizarUI();
+}
+
+function moverCarrusel(direccion) {
+  slideActual = (slideActual + direccion + totalSlides) % totalSlides;
+  irASlide(slideActual);
+}
+
+function actualizarUI() {
+  // Dots
+  for (var i = 0; i < totalSlides; i++) {
+    var dot = document.getElementById("dot-" + i);
+    if (!dot) continue;
+    if (i === slideActual) {
+      dot.style.width = "2rem";
+      dot.style.background = "#10b981";
+    } else {
+      dot.style.width = "0.5rem";
+      dot.style.background = "#475569";
+    }
+  }
+
+  // Flechas
+  var prev = document.getElementById("btn-prev");
+  var next = document.getElementById("btn-next");
+  if (prev) {
+    if (slideActual === 0) {
+      prev.style.opacity = "0";
+      prev.style.pointerEvents = "none";
+    } else {
+      prev.style.opacity = "1";
+      prev.style.pointerEvents = "auto";
+    }
+  }
+  if (next) {
+    if (slideActual === totalSlides - 1) {
+      next.style.opacity = "0";
+      next.style.pointerEvents = "none";
+    } else {
+      next.style.opacity = "1";
+      next.style.pointerEvents = "auto";
+    }
+  }
+}
+
+// Inicializar carrusel cuando carga
+document.addEventListener("DOMContentLoaded", function () {
+  actualizarUI();
+});

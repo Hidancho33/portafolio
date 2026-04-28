@@ -312,7 +312,7 @@
 
 
 <!-- ═══════════════════════════════════════════════════════
-     PROYECTO DESTACADO — VELOCITY ADVENTURES
+     PROYECTOS — CARRUSEL
 ════════════════════════════════════════════════════════ -->
 <section id="proyecto" class="py-24 relative overflow-hidden">
 
@@ -325,163 +325,364 @@
 
   <div class="max-w-6xl mx-auto px-6 relative z-10">
 
+    <!-- Encabezado -->
     <div class="text-center mb-16 reveal">
-      <p class="section-label mb-3" data-i18n="proj-label">Proyecto en Desarrollo</p>
+      <p class="section-label mb-3" data-i18n="proj-label">Proyectos</p>
       <h2 class="font-display text-4xl md:text-5xl font-extrabold text-white">
         <span data-i18n="proj-heading-1">Lo que he</span> <span class="gradient-text" data-i18n="proj-heading-2">construido</span>
       </h2>
     </div>
 
-    <!-- Tarjeta principal -->
-    <div class="reveal card-glass rounded-3xl overflow-hidden border border-emerald-500/20">
-
-      <div class="h-1 bg-gradient-to-r from-emerald-400 via-emerald-500 to-teal-400"></div>
-
-      <div class="grid md:grid-cols-5 gap-0">
-
-        <!-- Panel izquierdo -->
-        <div class="md:col-span-2 p-8 md:p-10 flex flex-col justify-between
-                    bg-gradient-to-br from-emerald-900/20 to-transparent
-                    border-b md:border-b-0 md:border-r border-slate-700/50">
-          <div>
-            <div class="w-16 h-16 rounded-2xl bg-emerald-500/15 border border-emerald-500/30
-                        flex items-center justify-center mb-6 animate-float">
-              <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor"
-                   stroke-width="1.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 21h18M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-              </svg>
-            </div>
-            <div class="inline-flex items-center gap-2 mb-4">
-              <span class="skill-pill">Full Stack</span>
-              <span class="skill-pill">2026</span>
-            </div>
-            <h3 class="font-display text-3xl font-extrabold text-white mb-2 leading-tight">
-              Velocity<br/><span class="text-emerald-400">Adventures</span>
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="proj-desc">
-              Plataforma integral para gestión de expediciones de deportes extremos.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-3 gap-4 mt-8">
-            <div class="text-center">
-              <div class="font-display text-2xl font-bold text-emerald-400">100%</div>
-              <div class="text-slate-500 text-xs mt-1" data-i18n="proj-stat-1">Responsivo</div>
-            </div>
-            <div class="text-center border-x border-slate-700/60">
-              <div class="font-display text-2xl font-bold text-emerald-400">REST</div>
-              <div class="text-slate-500 text-xs mt-1">API Design</div>
-            </div>
-            <div class="text-center">
-              <div class="font-display text-2xl font-bold text-emerald-400">MySQL</div>
-              <div class="text-slate-500 text-xs mt-1">Database</div>
-            </div>
-          </div>
-
-          <div class="flex gap-3 mt-8">
-            <a href="https://hidancho33.github.io/proyects_Velocity_Adventure/explore.html" class="btn-primary text-sm py-2.5 px-5 flex-1 justify-center">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-              </svg>
-              <span data-i18n="proj-btn-soon">Pronto..</span>
-            </a>
-            <a href="https://github.com/Hidancho33/proyects_Velocity_Adventure#" target="_blank" rel="noopener"
-               class="btn-outline text-sm py-2.5 px-5 flex-1 justify-center">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-              </svg>
-              <span data-i18n="proj-btn-code">Código</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Panel derecho -->
-        <div class="md:col-span-3 p-8 md:p-10">
-          <h4 class="font-display font-bold text-white text-lg mb-6" data-i18n="proj-features-title">Características del Proyecto</h4>
-          <ul class="space-y-4 mb-8">
-
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                </svg>
-              </div>
-              <div>
-                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-1-title">Diseño 100% Responsivo</div>
-                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-1-desc">Interfaz adaptativa Mobile First que garantiza una experiencia fluida en cualquier dispositivo, desde móvil hasta escritorio.</p>
-              </div>
-            </li>
-
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L13 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 017 21v-7.586L3.293 6.707A1 1 0 013 6V4z"/>
-                </svg>
-              </div>
-              <div>
-                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-2-title">Filtrado Dinámico en JavaScript</div>
-                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-2-desc">Sistema de filtros en tiempo real por categoría, dificultad y precio sin recargar la página.</p>
-              </div>
-            </li>
-
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-                </svg>
-              </div>
-              <div>
-                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-3-title">Carrito con Persistencia</div>
-                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-3-desc">Gestión de reservas con persistencia en LocalStorage, manteniendo el estado del usuario entre sesiones.</p>
-              </div>
-            </li>
-
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                </svg>
-              </div>
-              <div>
-                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-4-title">Arquitectura API REST</div>
-                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-4-desc">Backend con Node.js + Express.js siguiendo principios REST, con endpoints documentados y autenticación JWT.</p>
-              </div>
-            </li>
-
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
-                </svg>
-              </div>
-              <div>
-                <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-5-title">Base de Datos MySQL</div>
-                <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-5-desc">Modelo relacional normalizado con tablas de usuarios, expediciones, reservas y pagos.</p>
-              </div>
-            </li>
-
-          </ul>
-
-          <div>
-            <p class="text-slate-500 text-xs font-medium mb-3 tracking-wide uppercase" data-i18n="proj-stack-label">Stack Utilizado</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="skill-pill">HTML5</span>
-              <span class="skill-pill">CSS3</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">Node.js</span>
-              <span class="skill-pill">Express.js</span>
-              <span class="skill-pill">MySQL</span>
-              <span class="skill-pill">API REST</span>
-              <span class="skill-pill">Bootstrap</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <!-- Indicadores de slide -->
+    <div class="flex items-center justify-center gap-3 mb-8 reveal">
+      <button onclick="irASlide(0)"
+              id="dot-0"
+              aria-label="Proyecto 1"
+              class="carousel-dot w-8 h-2 rounded-full bg-emerald-500 transition-all duration-300"></button>
+      <button onclick="irASlide(1)"
+              id="dot-1"
+              aria-label="Proyecto 2"
+              class="carousel-dot w-2 h-2 rounded-full bg-slate-600 transition-all duration-300"></button>
     </div>
+
+    <!-- Wrapper del carrusel -->
+    <div class="relative overflow-hidden reveal">
+      <div id="carousel-track"
+           class="flex transition-transform duration-500 ease-in-out"
+           style="will-change: transform;">
+
+        <!-- ══════════ SLIDE 1 — VELOCITY ADVENTURES ══════════ -->
+        <div class="w-full flex-shrink-0 card-glass rounded-3xl overflow-hidden border border-emerald-500/20">
+          <div class="h-1 bg-gradient-to-r from-emerald-400 via-emerald-500 to-teal-400"></div>
+          <div class="grid md:grid-cols-5 gap-0">
+
+            <!-- Panel izq -->
+            <div class="md:col-span-2 p-8 md:p-10 flex flex-col justify-between
+                        bg-gradient-to-br from-emerald-900/20 to-transparent
+                        border-b md:border-b-0 md:border-r border-slate-700/50">
+              <div>
+                <div class="w-16 h-16 rounded-2xl bg-emerald-500/15 border border-emerald-500/30
+                            flex items-center justify-center mb-6 animate-float">
+                  <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor"
+                       stroke-width="1.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 21h18M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                  </svg>
+                </div>
+                <div class="inline-flex items-center gap-2 mb-4">
+                  <span class="skill-pill">Full Stack</span>
+                  <span class="skill-pill">2026</span>
+                </div>
+                <h3 class="font-display text-3xl font-extrabold text-white mb-2 leading-tight">
+                  Velocity<br/><span class="text-emerald-400">Adventures</span>
+                </h3>
+                <p class="text-slate-400 text-sm leading-relaxed" data-i18n="proj-desc">
+                  Plataforma integral para gestión de expediciones de deportes extremos.
+                </p>
+              </div>
+              <div class="grid grid-cols-3 gap-4 mt-8">
+                <div class="text-center">
+                  <div class="font-display text-2xl font-bold text-emerald-400">100%</div>
+                  <div class="text-slate-500 text-xs mt-1" data-i18n="proj-stat-1">Responsivo</div>
+                </div>
+                <div class="text-center border-x border-slate-700/60">
+                  <div class="font-display text-2xl font-bold text-emerald-400">REST</div>
+                  <div class="text-slate-500 text-xs mt-1">API Design</div>
+                </div>
+                <div class="text-center">
+                  <div class="font-display text-2xl font-bold text-emerald-400">MySQL</div>
+                  <div class="text-slate-500 text-xs mt-1">Database</div>
+                </div>
+              </div>
+              <div class="flex gap-3 mt-8">
+                <a href="https://hidancho33.github.io/proyects_Velocity_Adventure/explore.html"
+                   class="btn-primary text-sm py-2.5 px-5 flex-1 justify-center">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                  <span data-i18n="proj-btn-soon">Pronto..</span>
+                </a>
+                <a href="https://github.com/Hidancho33/proyects_Velocity_Adventure#"
+                   target="_blank" rel="noopener"
+                   class="btn-outline text-sm py-2.5 px-5 flex-1 justify-center">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                  </svg>
+                  <span data-i18n="proj-btn-code">Código</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Panel der -->
+            <div class="md:col-span-3 p-8 md:p-10">
+              <h4 class="font-display font-bold text-white text-lg mb-6" data-i18n="proj-features-title">Características del Proyecto</h4>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-1-title">Diseño 100% Responsivo</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-1-desc">Interfaz adaptativa Mobile First que garantiza una experiencia fluida en cualquier dispositivo, desde móvil hasta escritorio.</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L13 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 017 21v-7.586L3.293 6.707A1 1 0 013 6V4z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-2-title">Filtrado Dinámico en JavaScript</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-2-desc">Sistema de filtros en tiempo real por categoría, dificultad y precio sin recargar la página.</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-3-title">Carrito con Persistencia</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-3-desc">Gestión de reservas con persistencia en LocalStorage, manteniendo el estado del usuario entre sesiones.</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-4-title">Arquitectura API REST</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-4-desc">Backend con Node.js + Express.js siguiendo principios REST, con endpoints documentados y autenticación JWT.</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="feat-5-title">Base de Datos MySQL</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="feat-5-desc">Modelo relacional normalizado con tablas de usuarios, expediciones, reservas y pagos.</p>
+                  </div>
+                </li>
+              </ul>
+              <div>
+                <p class="text-slate-500 text-xs font-medium mb-3 tracking-wide uppercase" data-i18n="proj-stack-label">Stack Utilizado</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="skill-pill">HTML5</span>
+                  <span class="skill-pill">CSS3</span>
+                  <span class="skill-pill">JavaScript</span>
+                  <span class="skill-pill">Node.js</span>
+                  <span class="skill-pill">Express.js</span>
+                  <span class="skill-pill">MySQL</span>
+                  <span class="skill-pill">API REST</span>
+                  <span class="skill-pill">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ══════ FIN SLIDE 1 ══════ -->
+
+        <!-- ══════════ SLIDE 2 — SWEET BAKERY ══════════ -->
+        <div class="w-full flex-shrink-0 card-glass rounded-3xl overflow-hidden border border-pink-500/20">
+          <div class="h-1 bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400"></div>
+          <div class="grid md:grid-cols-5 gap-0">
+
+            <!-- Panel izq -->
+            <div class="md:col-span-2 p-8 md:p-10 flex flex-col justify-between
+                        bg-gradient-to-br from-pink-900/20 to-transparent
+                        border-b md:border-b-0 md:border-r border-slate-700/50">
+              <div>
+                <div class="w-16 h-16 rounded-2xl bg-pink-500/15 border border-pink-500/30
+                            flex items-center justify-center mb-6 animate-float">
+                  <!-- Icono de pastelería -->
+                  <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor"
+                       stroke-width="1.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M8 10h.01M12 10h.01M16 10h.01"/>
+                  </svg>
+                </div>
+                <div class="inline-flex items-center gap-2 mb-4">
+                  <span style="background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.25);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">Full Stack</span>
+                  <span style="background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.25);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">2026</span>
+                </div>
+                <h3 class="font-display text-3xl font-extrabold text-white mb-2 leading-tight">
+                  Sweet<br/><span style="color:#f472b6;">Bakery</span>
+                </h3>
+                <p class="text-slate-400 text-sm leading-relaxed" data-i18n="sb-desc">
+                  Tienda online de postres artesanales con catálogo dinámico, carrito de compras, sistema de pedidos y notificaciones vía WhatsApp.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-3 gap-4 mt-8">
+                <div class="text-center">
+                  <div class="font-display text-2xl font-bold" style="color:#f472b6;">100%</div>
+                  <div class="text-slate-500 text-xs mt-1" data-i18n="sb-stat-1">Responsivo</div>
+                </div>
+                <div class="text-center border-x border-slate-700/60">
+                  <div class="font-display text-2xl font-bold" style="color:#f472b6;">REST</div>
+                  <div class="text-slate-500 text-xs mt-1">API Design</div>
+                </div>
+                <div class="text-center">
+                  <div class="font-display text-2xl font-bold" style="color:#f472b6;">Mongo</div>
+                  <div class="text-slate-500 text-xs mt-1">Database</div>
+                </div>
+              </div>
+
+              <div class="flex gap-3 mt-8">
+                <a href="https://github.com/Hidancho33/sweet-bakery-main"
+                   target="_blank" rel="noopener"
+                   class="btn-outline text-sm py-2.5 px-5 flex-1 justify-center"
+                   style="border-color:rgba(236,72,153,0.4);color:#f9a8d4;">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                  <span data-i18n="sb-btn-demo">Demo</span>
+                </a>
+                <a href="https://github.com/Hidancho33/sweet-bakery-main"
+                   target="_blank" rel="noopener"
+                   class="btn-outline text-sm py-2.5 px-5 flex-1 justify-center"
+                   style="border-color:rgba(236,72,153,0.4);color:#f9a8d4;">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                  </svg>
+                  <span data-i18n="proj-btn-code">Código</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Panel der -->
+            <div class="md:col-span-3 p-8 md:p-10">
+              <h4 class="font-display font-bold text-white text-lg mb-6" data-i18n="proj-features-title">Características del Proyecto</h4>
+              <ul class="space-y-4 mb-8">
+
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
+                       style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);">
+                    <svg class="w-4 h-4" style="color:#f472b6;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="sb-feat-1-title">Catálogo Dinámico & Carrito</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="sb-feat-1-desc">Productos cargados desde MongoDB con filtros por categoría, carrito persistente en LocalStorage y gestión de favoritos.</p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
+                       style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);">
+                    <svg class="w-4 h-4" style="color:#f472b6;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="sb-feat-2-title">Notificaciones WhatsApp</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="sb-feat-2-desc">Integración con la API de WhatsApp para envío automático de confirmaciones de pedido al cliente y al negocio en tiempo real.</p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
+                       style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);">
+                    <svg class="w-4 h-4" style="color:#f472b6;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="sb-feat-3-title">Generación de Facturas PDF</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="sb-feat-3-desc">Cada pedido genera automáticamente una factura en PDF con PDFKit, descargable desde la vista de confirmación.</p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
+                       style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);">
+                    <svg class="w-4 h-4" style="color:#f472b6;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="sb-feat-4-title">Backend Node.js + MongoDB</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="sb-feat-4-desc">API REST con Express.js y Mongoose, modelos de datos para productos, pedidos, clientes, direcciones y métodos de pago.</p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
+                       style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);">
+                    <svg class="w-4 h-4" style="color:#f472b6;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm mb-1" data-i18n="sb-feat-5-title">UI Mobile First con Bootstrap 5</div>
+                    <p class="text-slate-400 text-xs leading-relaxed" data-i18n="sb-feat-5-desc">Interfaz responsiva optimizada para móvil con componentes reutilizables cargados dinámicamente, header, footer y bottom-nav.</p>
+                  </div>
+                </li>
+
+              </ul>
+              <div>
+                <p class="text-slate-500 text-xs font-medium mb-3 tracking-wide uppercase" data-i18n="proj-stack-label">Stack Utilizado</p>
+                <div class="flex flex-wrap gap-2">
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">HTML5</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">CSS3</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">Bootstrap 5</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">JavaScript</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">Node.js</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">Express.js</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">MongoDB</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">Mongoose</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">PDFKit</span>
+                  <span style="background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.2);color:#f9a8d4;font-size:0.78rem;font-weight:500;padding:0.25rem 0.75rem;border-radius:9999px;">WhatsApp API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ══════ FIN SLIDE 2 ══════ -->
+
+      </div><!-- fin carousel-track -->
+
+      <!-- Flechas de navegación -->
+      <button onclick="moverCarrusel(-1)" id="btn-prev"
+              aria-label="Proyecto anterior"
+              class="absolute left-3 top-1/2 -translate-y-1/2 z-20
+                     w-10 h-10 rounded-full flex items-center justify-center
+                     bg-slate-800/80 border border-slate-700/60 text-slate-400
+                     hover:text-white hover:border-emerald-500/50 hover:bg-slate-700
+                     transition-all duration-200 opacity-0 pointer-events-none"
+              style="backdrop-filter:blur(8px);">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <button onclick="moverCarrusel(1)" id="btn-next"
+              aria-label="Proyecto siguiente"
+              class="absolute right-3 top-1/2 -translate-y-1/2 z-20
+                     w-10 h-10 rounded-full flex items-center justify-center
+                     bg-slate-800/80 border border-slate-700/60 text-slate-400
+                     hover:text-white hover:border-emerald-500/50 hover:bg-slate-700
+                     transition-all duration-200"
+              style="backdrop-filter:blur(8px);">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+
+    </div><!-- fin overflow-hidden -->
 
   </div>
 </section>
